@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일본 여행 추천</title>
+    <!-- Google Fonts 추가 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif; /* 새로운 글씨체 적용 */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3em; /* 제목 크기 키움 */
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .content, .sidebar, .footer {
+            margin-bottom: 20px;
+        }
+        .content, .footer {
+            flex: 1 1 100%;
+        }
+        .sidebar {
+            flex: 1 1 30%;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar li {
+            background: #ffedd5;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .region {
+            margin: 20px 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .region h2 {
+            color: #ff6f61;
+            font-size: 2em;
+        }
+        .places {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .place {
+            flex: 1 1 30%;
+            background: #fffbf2;
+            border: 1px solid #ffcc99;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .place h3 {
+            color: #e27d60;
+            font-size: 1.2em;
+        }
+        .vote {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .vote h2 {
+            color: #6c63ff;
+            font-size: 2em;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e65b50;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>일본 여행 추천</h1>
+        <p>일본의 멋진 여행지와 맛집을 소개합니다!</p>
+    </header>
+    <main>
+        <div class="content">
+            <h2>일본에 오신 것을 환영합니다!</h2>
+            <p>일본의 놀라운 여행지와 전통 요리를 발견해 보세요. 도쿄의 화려한 도시, 교토의 역사적 매력, 오사카의 음식 천국까지 모든 것을 소개합니다!</p>
+        </div>
+        <div class="sidebar">
+            <h3>인기 지역</h3>
+            <ul>
+                <li>도쿄</li>
+                <li>오사카</li>
+                <li>교토</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="region">
+                <h2>도쿄</h2>
+                <p>높은 빌딩, 활기찬 야경, 세계적인 요리로 유명합니다.</p>
+                <div class="places">
+                    <div class="place">
+                        <h3>신주쿠</h3>
+                        <p>쇼핑, 엔터테인먼트, 도쿄 타워에서의 멋진 전망.</p>
+                    </div>
+                    <div class="place">
+                        <h3>시부야</h3>
+                        <p>아이코닉 크로싱, 트렌디한 상점, 맛있는 카페.</p>
+                    </div>
+                    <div class="place">
+                        <h3>아키하바라</h3>
+                        <p>애니메이션, 만화, 전자기기 애호가들의 천국.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="region">
+                <h2>오사카</h2>
+                <p>길거리 음식, 야경, 친절한 현지인들로 유명합니다.</p>
+                <div class="places">
+                    <div class="place">
+                        <h3>도톤보리</h3>
+                        <p>타코야키, 오코노미야키 등 오사카의 대표 음식.</p>
+                    </div>
+                    <div class="place">
+                        <h3>오사카 성</h3>
+                        <p>아름다운 경관을 자랑하는 역사적인 랜드마크.</p>
+                    </div>
+                    <div class="place">
+                        <h3>유니버설 스튜디오</h3>
+                        <p>놀라운 어트랙션이 가득한 세계적인 테마파크.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="region">
+                <h2>교토</h2>
+                <p>역사, 사원, 전통적인 경험이 풍부한 도시입니다.</p>
+                <div class="places">
+                    <div class="place">
+                        <h3>후시미 이나리 신사</h3>
+                        <p>수천 개의 주황색 토리이 문을 지나보세요.</p>
+                    </div>
+                    <div class="place">
+                        <h3>아라시야마 대나무숲</h3>
+                        <p>고요하고 그림 같은 대나무숲.</p>
+                    </div>
+                    <div class="place">
+                        <h3>기요미즈데라</h3>
+                        <p>숨막히는 전망을 제공하는 아름다운 사찰.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content vote">
+            <h2>가장 마음에 드는 여행지를 투표해주세요</h2>
+            <form>
+                <label>
+                    <input type="radio" name="destination" value="도쿄"> 도쿄
+                </label>
+                <label>
+                    <input type="radio" name="destination" value="오사카"> 오사카
+                </label>
+                <label>
+                    <input type="radio" name="destination" value="교토"> 교토
+                </label>
+                <br><br>
+                <button type="submit">투표하기</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>202402568 김민서</p>
+    </footer>
+</body>
+</html>
